@@ -1,187 +1,590 @@
 /* Reset and Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  color: #00d065;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+  color: #00d065;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+.start-trial a {
+  background: #00d065;
+  color: white;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.start-trial a:hover {
+  background: white; /* Change the background color */
+  color: #00d065; /* Change the text color */
+  border: 2px solid #00d065; /* Optional: Add a border for better contrast */
+}
+
+/* Hero Section Styles */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 50px 0;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #00d065;
+}
+
+.hero-content p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Button Styles */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Register Button */
+.register-btn {
+  background: #00d065;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.register-btn:hover {
+  background: white; /* Changes background to white */
+  color: #00d065; /* Changes text color to match the theme */
+  border: 2px solid #00d065; /* Adds a border for consistency */
+}
+
+/* Login Button */
+.login-btn {
+  border: 2px solid #00d065;
+  color: #00d065;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.login-btn:hover {
+  background: #00d065; /* Fills with the primary color */
+  color: white; /* Changes text color to white */
+}
+
+/* Search Section Styles */
+.search-section {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.search-section select {
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  background: white;
+}
+
+.search-btn {
+  background: #00d065;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+.search-btn:hover {
+  background-color: #ffffff;
+  color: #00d065;
+  border: 2px solid #00d065; /* Adds a border for consistency */
+}
+
+/* Hero Image Styles */
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%; /* Make the hero image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer Image Styles */
+.footer-image {
+  text-align: center;
+  margin-top: 50px; /* Space from the content above */
+}
+
+.footer-image img {
+  width: 100%; /* Make the image responsive */
+  max-width: 2000px; /* Set a max-width if needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.about-us{
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items:start;
+}
+.about-content h2 {
+  color: #00d065;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.about-content h3{
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.about-content p{
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 20px;
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+}
+.about-btn {
+  display: inline-block;
+  background: #00d065;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.about-btn:hover {
+  background: white;
+  color: #00d065;
+  border: 2px solid #00d065;
+}
+.about-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* Benefits Section Styles */
+.benefits-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.benefits-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.benefits-header h4 {
+  color: #00d065;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.green-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #00d065;
+  border-radius: 50%;
+}
+
+.benefits-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.benefits-title h2 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.benefits-title p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.benefit-card {
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-card .number {
+  color: #00d065;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.benefit-card p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.read-more {
+  color: #00d065;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.view-features {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Join Section Styles */
+.join-section {
+  position: relative;
+  background-image: url('path-to-your-lightbulb-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+.join-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.join-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 20px;
+}
+
+.join-label {
+  color: #00d065;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.join-section h2 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.join-section p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.join-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.start-trial-btn {
+  background: #00d065;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.start-trial-btn:hover {
+  background: white;
+  color: #00d065;
+}
+
+.contact-btn {
+  background: transparent;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: white;
+  color: #000;
+}
+
+/* Footer Styles */
+.main-footer {
+  background: #1a1a1a;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  color: #00d065;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00d065;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00d065;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .join-section h2 {
+    font-size: 32px;
   }
-  
-  /* Navigation Styles */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+
+  .join-buttons {
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  .logo {
-    color: #00d065;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .nav-links {
-    display: flex;
+
+  .footer-content {
+    flex-direction: column;
     gap: 30px;
-    align-items: center;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .nav-links a:hover {
-    color: #00d065;
-  }
-  
-  .start-trial {
-    background: #00d065;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-  }
-  
-  /* Hero Section Styles */
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    padding: 50px 0;
-    align-items: center;
-  }
-  
-  .hero-content h1 {
-    font-size: 48px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content h1 span {
-    color: #00d065;
-  }
-  
-  .hero-content p {
-    color: #666;
-    margin-bottom: 30px;
-    line-height: 1.6;
-  }
-  
-  /* Button Styles */
-  .hero-buttons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .register-btn {
-    background: #00d065;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .login-btn {
-    border: 2px solid #00d065;
-    color: #00d065;
-    padding: 12px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  /* Search Section Styles */
-  .search-section {
-    display: flex;
-    gap: 20px;
-    margin-top: 40px;
-  }
-  
-  .search-section select {
-    padding: 12px 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 200px;
-    background: white;
-  }
-  
-  .search-btn {
-    background: #00d065;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Hero Image Styles */
-  .hero-image {
-    position: relative;
-  }
-  
-  .hero-image img {
-    width: 100%; /* Make the hero image responsive */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  /* Footer Image Styles */
-  .footer-image {
     text-align: center;
-    margin-top: 50px; /* Space from the content above */
   }
-  
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .benefits-title h2 {
+    font-size: 32px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card {
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    text-align: center; /* Center align the text */
+  }
+
+  .hero-content h1 {
+    font-size: 36px; /* Smaller font size for mobile */
+  }
+
+  .hero-buttons {
+    justify-content: center; /* Center buttons on mobile */
+  }
+
+  .search-section {
+    justify-content: center; /* Center the search section */
+  }
+
   .footer-image img {
-    width: 100%; /* Make the image responsive */
-    max-width: 2000px; /* Set a max-width if needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Make footer image full-width */
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    /* Hero Section */
-    .hero {
-      grid-template-columns: 1fr; /* Single column on smaller screens */
-      text-align: center; /* Center align the text */
-    }
-  
-    .hero-content h1 {
-      font-size: 36px; /* Smaller font size for mobile */
-    }
-  
-    .hero-buttons {
-      justify-content: center; /* Center buttons on mobile */
-    }
-  
-    .search-section {
-      justify-content: center; /* Center the search section */
-    }
-  
-    .footer-image img {
-      width: 100%; /* Make footer image full-width */
-    }
-  
-    .nav-links {
-      display: none; /* Hide navigation links on small screens */
-    }
+
+  .nav-links {
+    display: none; /* Hide navigation links on small screens */
   }
-  
-  @media (max-width: 480px) {
-    .hero-content h1 {
-      font-size: 28px; /* Even smaller font size for very small screens */
-    }
-  
-    .footer-image img {
-      width: 100%; /* Make sure the image still takes up the full width */
-    }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 28px; /* Even smaller font size for very small screens */
   }
-  
+
+  .footer-image img {
+    width: 100%; /* Make sure the image still takes up the full width */
+  }
+}
